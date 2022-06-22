@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'retro';
+    src: url('../fonts/hataretro_otameshi.ttf') format('truetype');
+}
+
+p {
+    color: #000;
+    font-family: 'retro'
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 5rem;
+}
+ 
+h1:before,
+h1:after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    background-color: #666;
+}
+ 
+h1:before {
+    margin-right: 1rem;
+}
+ 
+h1:after {
+    margin-left: 1rem;
+}
+
+.menu-box{
+    display: flex;
+    position: relative;
+    width: 50%;
+    margin:  auto;
+}
+
+.menu-child{
+    position: relative;
+    margin:  auto;
+    padding: auto;
+    left: auto;
+    right: auto;
+}
+
+.story-body{
+    border-radius: 1.3rem;
+    text-align: center;
+    color: #311;
+    background-color: #c9afaa8a;
+    padding: 0.8rem;
+    width: 85%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-btn{
+    width: 10rem;
+    height: 100rem;
+    color: #000;
+    text-decoration: none;
+    border-left: solid red;
+    border-right: solid red;
+}
+
+.container{
+    font-family: 'retro', sans-serif;
+    /* background-color: red; */
+}
+
+h6, h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h6{
+    height: 2rem;
+}
+
+h5{
+    height: 3rem;
+}
+
+.tutorial-body{
+    position: relative;
+}
+
+.what-nazo-title{
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+}
+
+.what-nazo{
+    position: absolute;
+    left: 10rem;
+}

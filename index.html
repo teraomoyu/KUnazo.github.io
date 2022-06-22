@@ -4,44 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>「LINEで京大謎解き」公式ストーリーサイト</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="menu-box">
         <div class="menu-child">
-            <a href="#story">ストーリー</a>
+            <a class="menu-btn" href="#story">ストーリー</a>
         </div>
         <div class="menu-child">
-            <a href="#tutorial">遊び方</a>
+            <a class="menu-btn" href="#tutorial">遊び方</a>
         </div>
         <div class="menu-child">
-            <a href="#chui">注意事項</a>
+            <a class="menu-btn" href="#chui">注意事項</a>
         </div>
         <div class="menu-child">
-            <a href="#mondai">練習問題</a>
+            <a class="menu-btn" href="#mondai">練習問題</a>
         </div>
     </div>
-    <div id="story">
+    <div class=container id="story">
         <h1>ストーリー</h1>
-            <p>あなたの名前は京大　太郎（きょうだい　たろう）。あなたは京都大学の卒業生である。就職で東京に出てしばらく京都には来ていなかったが、久しぶりに京都で大学時代の友達と集まろうということになり、京都にやってきたのだった。集まりが翌日に迫った今日、せっかくなら京都まで来たなら大学に寄ろうと思い京大に立ち寄った。すると、あなたは1人の男に話しかけられた。
-        「この謎の指示に従っていくとあなたが今会いたい人に会えます。」
-        胡散臭いとは思ったが、会いたい人というワードに心当たりがあったあなたはせっかくなのでやってみることにした。</p>
+            <div class=story-body>
+                <h6>あなたの名前は京大　太郎（きょうだい　たろう）。</h6>
+                <h6>あなたは京都大学の卒業生である。</h6>
+                <h6>就職で東京に出てしばらく京都には来ていなかったが、久しぶりに京都で大学時代の友達と集まろうということになり、京都にやってきたのだった。</h6>
+                <h6>集まりが翌日に迫った今日、せっかくなら京都まで来たなら大学に寄ろうと思い京大に立ち寄った。</h6>
+                <h6>すると、あなたは1人の男に話しかけられた。</h6>
+                <h5>「この謎の指示に従っていくとあなたが今、会いたい人に会えます。」</h5>
+                <h6>胡散臭いとは思ったが、会いたい人というワードに心当たりがあったあなたはせっかくなのでやってみることにした。</h6>
+            </div>
     </div>
-    <div id="tutorial">
+    <div class=container id="tutorial">
         <h1>遊び方</h1>
-            <h2>リアル謎解きゲームとは？</h2>
-                <p>実際に町を歩いて指示された場所に行き、その場所にある情報を元にLINEのアカウントから出題される謎を解き、物語を進めていくゲームです。</p>
-            <h2>ゲームの流れ</h2>
-                <p>1.謎解き用のLINE公式アカウントを友達追加する。</p>
-                <p>2.実際に京都大学吉田キャンパス内の本部構内に行き、謎を解く。</p>
-                <p>3.最後の答えを入力。</p>
-                <p>謎解きアカウントの追加はこちらから</p>
-                <p>町を歩いて謎を解く</p>
-                <p>制限時間なし</p>
-                <p>LINEアプリ使用</p>
+            <div class=tutorial-body>
+                <h2 class="what-nazo-title">リアル謎解きゲームとは？</h2>
+                    <p class="what-nazo">実際に町を歩いて指示された場所に行き、その場所にある情報を元にLINEのアカウントから出題される謎を解き、物語を進めていくゲームです。</p>
+                <h2>ゲームの流れ</h2>
+                    <p>1.謎解き用のLINE公式アカウントを友達追加する。</p>
+                    <p>2.実際に京都大学吉田キャンパス内の本部構内に行き、謎を解く。</p>
+                    <p>3.最後の答えを入力。</p>
+                    <p>謎解きアカウントの追加はこちらから</p>
+                    <p>町を歩いて謎を解く</p>
+                    <p>制限時間なし</p>
+                    <p>LINEアプリ使用</p>
+            </div>
     </div>
-    <div id="chui">
+    <div class=container id="chui">
         <h1>注意事項</h1>
             <p>京大構内にいる人は謎のヒントや答えを持っていません。質問はご遠慮ください。</p>
             <p>ゲームの参加にはPC・スマートフォンなどのインターネットに接続された端末が必要です。</p>
@@ -54,7 +65,7 @@
             <p>歩行中のスマートフォンのご利用は大変危険ですのでおやめください。</p>
             <p>本謎解きの謎の問題、解答、配布物をブログやSNSなど、インターネット上で公開することは固くお断りします。（ネタバレにならない感想などは大歓迎です。）</p>
     </div>
-    <div id="mondai">
+    <div class=container id="mondai">
         <h1>練習問題</h1>
     </div>
 </body>
