@@ -2,17 +2,66 @@
     font-family: 'retro';
     src: url('../fonts/hataretro_otameshi.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'mutsuki';
+    src: url('../fonts/Mutsuki.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'kokumin';
+    src: url('../fonts/font_1_kokumr_1.00_rls.ttf') format('truetype');
+}
 
-p {
+:root {
+    --base-color: #eee;
+    --main-color: #c9afaa8a;
+    /* --main-color: #c9b4aab6; */
+    --accent-color: #f5546a;
+}
+
+.full-page{
+    background-color: var(--base-color);
+    z-index: 100;
+    width: 100%;
+}
+
+.menu-box{
+    display: flex;
+    font-family: 'kokumin';
+    font-size: 1.5rem;
+    position: fixed;
+    justify-content: center;
+    width: 100%;
+    margin:  auto;
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 1000;
+    background-color: var(--base-color);
+}
+
+.menu-child{
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+}
+
+.menu-btn{
     color: #000;
-    font-family: 'retro'
+    text-decoration: none;
+    border-left: solid var(--accent-color);
+    border-right: solid var(--accent-color);
+}
+
+.container{
+    font-family: 'kokumin';
 }
 
 h1 {
     display: flex;
+    position: relative;
     align-items: center;
     margin: 0;
     height: 5rem;
+    top: 2rem;
 }
  
 h1:before,
@@ -31,45 +80,21 @@ h1:after {
     margin-left: 1rem;
 }
 
-.menu-box{
-    display: flex;
-    position: relative;
-    width: 50%;
-    margin:  auto;
-}
-
-.menu-child{
-    position: relative;
-    margin:  auto;
-    padding: auto;
-    left: auto;
-    right: auto;
-}
-
-.story-body{
+.story-body, .tutorial-body, .chui-body, .mondai-body{
     border-radius: 1.3rem;
-    text-align: center;
-    color: #311;
-    background-color: #c9afaa8a;
+    background-color: var(--main-color);
     padding: 0.8rem;
     width: 85%;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    top: 1.5rem;
 }
 
-.menu-btn{
-    width: 10rem;
-    height: 100rem;
-    color: #000;
-    text-decoration: none;
-    border-left: solid red;
-    border-right: solid red;
-}
-
-.container{
-    font-family: 'retro', sans-serif;
-    /* background-color: red; */
+.story-body{
+    color: #311;
+    text-align: center;
 }
 
 h6, h5{
@@ -86,17 +111,29 @@ h5{
     height: 3rem;
 }
 
-.tutorial-body{
+.what-nazo{
+    padding: 1rem;
+    margin: 0 0 1rem 0;
+    /* border-bottom: 0.05rem solid var(--accent-color); */
+}
+
+.flow{
+    padding: 1rem;
+}
+.flow-body{
+    font-size: 1.3rem;
+}
+.flow-sub{
+    display: flex;
+
+}
+.flow-sub > p{
+    padding: 3rem;
+    margin:  auto;
     position: relative;
 }
 
-.what-nazo-title{
-    height: 10rem;
-    width: 10rem;
-    position: absolute;
-}
 
-.what-nazo{
-    position: absolute;
-    left: 10rem;
+.what-nazo-body{
+    margin: 0;
 }
