@@ -123,17 +123,66 @@ h5{
 .flow-body{
     font-size: 1.3rem;
 }
+
+.cards{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.card{
+    background-color: var(--base-color);
+}
+.arrow{
+    margin: auto;
+}
+
+.card-title{
+    text-align: center;
+}
+
 .flow-sub{
     display: flex;
-
+    border: 0.1rem solid var(--accent-color);
+    border-radius: 1rem;
+    width: 80%;
+    justify-content: center;
 }
+
 .flow-sub > p{
-    padding: 3rem;
-    margin:  auto;
+    padding: 2rem 2rem;
+    margin: 0 0 0 0;
     position: relative;
 }
 
+table.table-bordered{
+    border-collapse: separate; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.1rem solid var(--accent-color);
+    border-radius: 1.5rem;
+    height: 5rem;
+    width: 50%;
+    margin:  auto;
+}
+
+td{
+    border: none;
+    border-right: 0.1rem solid var(--accent-color);;
+}
+
+table.table-bordered td:last-child{
+    border: none;
+}
 
 .what-nazo-body{
     margin: 0;
+}
+
+.account{
+    display: none;    
+}
+.account > a{
+    position: relative;
+    left: 1rem;
 }
