@@ -14,6 +14,7 @@
 :root {
     --base-color: #eee;
     --main-color: #c9afaa8a;
+    /* --main-color: #d4c2bf; */
     /* --main-color: #c9b4aab6; */
     --accent-color: #f5546a;
 }
@@ -41,7 +42,6 @@
 .menu-child{
     display: flex;
     justify-content: center;
-    width: 10rem;
 }
 
 .menu-btn{
@@ -49,6 +49,8 @@
     text-decoration: none;
     border-left: solid var(--accent-color);
     border-right: solid var(--accent-color);
+    width: 10rem;
+    text-align: center;
 }
 
 .container{
@@ -104,11 +106,11 @@ h6, h5{
 }
 
 h6{
-    height: 2rem;
+    min-height: 2rem;
 }
 
 h5{
-    height: 3rem;
+    min-height: 3rem;
 }
 
 .what-nazo{
@@ -129,11 +131,11 @@ h5{
     justify-content: center;
     margin-bottom: 2rem;
 }
+
 .card{
+    margin: 0.3rem;
     background-color: var(--base-color);
-}
-.arrow{
-    margin: auto;
+    width: 18rem;
 }
 
 .card-title{
@@ -168,7 +170,7 @@ table.table-bordered{
 
 td{
     border: none;
-    border-right: 0.1rem solid var(--accent-color);;
+    border-right: 0.1rem solid var(--accent-color);
 }
 
 table.table-bordered td:last-child{
@@ -185,4 +187,35 @@ table.table-bordered td:last-child{
 .account > a{
     position: relative;
     left: 1rem;
+}
+
+@media screen and (max-width: 959px) {
+    table.table-bordered{
+        width: 80%;
+    }
+    td{
+        font-size: smaller;
+    }
+}
+@media screen and (max-width: 480px) {
+	.menu-box{
+        font-size: 1.3rem;
+        left: 0;
+        transform: translateX(0);
+    }
+    .menu-btn{
+        width: 6rem;
+    }
+    .cards{
+        display: block;
+    }
+    .card{
+        width: 16rem;
+    }
+    table.table-bordered{
+        width: 100%;
+    }
+    td{
+        font-size: small;
+    }
 }
