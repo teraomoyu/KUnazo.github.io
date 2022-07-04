@@ -12,13 +12,12 @@
 }
 
 :root {
-    --base-color: #eee;
+    --base-color: #eeeeee;
     --main-color: #c9afaa8a;
     /* --main-color: #d4c2bf; */
     /* --main-color: #c9b4aab6; */
     --accent-color: #f5546a;
 }
-
 .full-page{
     background-color: var(--base-color);
     z-index: 100;
@@ -189,6 +188,11 @@ table.table-bordered td:last-child{
     left: 1rem;
 }
 
+/* .to-top{ */
+    /* display: none; */
+    /* position: fixed; */
+/* } */
+
 @media screen and (max-width: 959px) {
     table.table-bordered{
         width: 80%;
@@ -208,9 +212,11 @@ table.table-bordered td:last-child{
     }
     .cards{
         display: block;
+        margin: auto;
     }
     .card{
-        width: 16rem;
+        width: 15rem;
+        margin: auto;
     }
     table.table-bordered{
         width: 100%;
